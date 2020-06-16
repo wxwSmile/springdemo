@@ -1,0 +1,10 @@
+package com.gupao.servlet.framework.annotation;
+
+import java.lang.annotation.*;
+
+@Target({ElementType.PARAMETER})
+@Retention(RetentionPolicy.RUNTIME)
+@Documented
+public @interface GpRequestParam {
+    String value() default "";
+}
